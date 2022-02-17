@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  
+  header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+  }
+  header h1 {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      /*background-image: url(./images/background2.jpg);*/
+      background-color: #f9cbb6;
+    
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    
+  }
+
+  header nav ul li {
+      padding: 10px 75px;
+  }
+
+      
+    .aboutMeSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutMe {
+        padding: 50px;
+        margin-top: 10px;
+    }
+
+    .aboutMeImage {
+    
+        padding: 50px;
+        
+    }
+    .aboutMeImage img {
+        height:250px;
+        width: 250px;
+        border: 3px solid black;
+        border-radius: 100%;
+    }
