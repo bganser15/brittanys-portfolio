@@ -4,30 +4,27 @@
     box-sizing: border-box;
   }
 
-  
-  
   header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       background-color: #f9cbb6;
-      margin: 10px 10px 0px 10px;
+
   }
   header h1 {
       width: 100%;
       text-align: center;
       padding: 20px;
       /*background-image: url(./images/background2.jpg);*/
-      
-    
+     
   }
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin: 0 10px 10px 10px;
     background-color: antiquewhite;
   
   }
@@ -41,9 +38,18 @@
 
     header li a{
     padding: 10px;
-        
-    
-}  
+} 
+
+a {
+    text-decoration: none;
+}
+
+.sectionHeader {
+    border-bottom: 2px solid black;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
  /*about me section*/
 
  .aboutMeSection {
@@ -55,18 +61,18 @@
 .aboutMeSection h2 {
     text-align: center;
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 50px;
     
 }
 
 .aboutMe {
     padding: 50px;
     margin-top: 10px;
+    width: 50%;
 }
 
 .aboutMeImage {
     padding: 50px;
-        
 }
 
 .aboutMeImage img {
@@ -80,14 +86,12 @@
 .myWorkSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 20px 50px;
 }
 
 .myWorkSection h2 {
     width: 100%;
-    text-align: center;
-    margin-bottom: 20px;;
 }
 .runBuddy {
     width: 100%;
@@ -116,6 +120,35 @@
     width: 100%;
 }
 
+/*get in touch section*/
+
+.getInTouchSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+}
+
+.getInTouchSection h2 {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin: 20px 50px;
+    padding: 0;
+    
+}
+
+.getInTouchSection img {
+    width:75px;
+    align-items: center;
+    
+}
+
+.getInTouchSection div {
+    text-align: center;
+}
+
 
 @media screen and (max-width: 768px){
     .projectTwo, .projectThree {
@@ -123,7 +156,13 @@
         height: 250px;
         background-color: rebeccapurple;
         
-        
+    
     }
+
+    .aboutMe {
+        width: 100%;
+    }
+
+
 }
 
