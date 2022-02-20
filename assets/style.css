@@ -47,26 +47,28 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 75px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    padding: 20px 100px;
 }
 
 header li a {
-    padding: 10px;
+    padding: px;
 } 
 
 a {
     text-decoration: none;
     font-family: sora;
+    color: inherit;
 }
 
 nav a:hover {
-    border-top: 1px solid black;
-    font-size:larger;
-    padding-top: 10px;
+    background-color: white;
+
 }
+
+nav li:hover {
+    background-color: white;
+}
+
 a:visited {
     text-decoration: none; 
     color: black;
@@ -124,6 +126,7 @@ a:visited {
     line-height: 2;
    
 }
+
 .aboutMeImage {
     height:250px;
     width: 250px;
@@ -137,6 +140,7 @@ a:visited {
     border: 3px solid black;
     border-radius: 100%;
     }
+   
 /*my work section*/
 
 .myWorkSection {
@@ -144,16 +148,14 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 100px;
-    position: relative;
-    
+    position: relative;    
 }
 
 .runBuddy {
     width: 100%;
     height:350px;  
     margin-bottom: 15px;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 .runBuddy img {
@@ -183,8 +185,7 @@ a:visited {
 }
 
 .projectTitle {
-    display: none;
-    
+    display: none;  
 }
 
 .runBuddy:hover .runBuddyText  {
@@ -199,9 +200,8 @@ a:visited {
     background-color: rgba(255, 255, 255, .25);
     border: 2px solid  rgba(255, 255, 255, .01);
     border-radius: 10px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        
-    }
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);  
+}
 
 .otherProjects:hover .projectTitle {
     position: absolute;
@@ -216,24 +216,20 @@ a:visited {
     border: 2px solid  rgba(255, 255, 255, .01);
     border-radius: 10px;  
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-
     }
+
 /*get in touch section*/
 
 .getInTouchSection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px;
     width: 100%;
 }
 
-
-
 .getInTouchSection img {
     width:75px;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .getInTouchSection div {
@@ -246,9 +242,30 @@ a:visited {
     width: 100%;
 }
 
+.links {
+    padding: 20px;
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+}
+
 
 /*MEDIA QUERIES*/
-
+@media screen and (max-width: 1000px) {
+    .aboutMe, .aboutMeImage {
+        width:100%;
+        padding-top: 0;
+       justify-content: center;
+    }
+}
+@media screen and (max-width: 890px) {
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     nav ul li {
@@ -278,7 +295,7 @@ a:visited {
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 400px){
     header h1 {
         background-color: rgba(255, 255, 255, .5);
     }
@@ -290,5 +307,6 @@ a:visited {
     .aboutMe {
         padding-top: 25px;
         text-align: center;
+        width: auto;
     }
 }
