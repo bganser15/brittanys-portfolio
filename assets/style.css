@@ -63,11 +63,22 @@ a {
     font-family: sora;
 }
 
+nav a:hover {
+    border-top: 1px solid black;
+    font-size:larger;
+    padding-top: 10px;
+}
+a:visited {
+    text-decoration: none; 
+    color: black;
+}
+
 .sectionHeader {
     padding: 15px;
     margin: 0 auto 20px auto;
     text-align: center;
     font-family: sora;
+    width: 70%;
 }
  /*about me section*/
 
@@ -75,15 +86,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 50px;  
-}
-
-.aboutMeSection h2 {
-    text-align: center;
-    width: 70%;
-    margin: 20px 50px;
-    font-family: sora;
-    
+    margin: 20px 100px;  
 }
 
 .sectionHeader:before {
@@ -120,6 +123,7 @@ a {
 .aboutMe p {
     font-family: sora;
     line-height: 2;
+   
 }
 .aboutMeImage {
     height:250px;
@@ -140,13 +144,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin: 20px 100px;
     position: relative;
-}
-
-.myWorkSection h2 {
-    width: 70%;
-    text-align: center;
+    
 }
 
 .runBuddy {
@@ -187,6 +187,38 @@ a {
     display: none;
     
 }
+
+.runBuddy:hover .runBuddyText  {
+    position: absolute;
+    display:flex;
+    align-items:flex-end;
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    font-family: sora;
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, .25);
+    border: 2px solid  rgba(255, 255, 255, .01);
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        
+    }
+
+.otherProjects:hover .projectTitle {
+    position: absolute;
+    display:flex;
+    align-items:flex-end;
+    height: 250px;
+    width: 49%;
+    padding: 10px;
+    font-family: sora;
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, .25);
+    border: 2px solid  rgba(255, 255, 255, .01);
+    border-radius: 10px;  
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+    }
 /*get in touch section*/
 
 .getInTouchSection {
@@ -197,13 +229,7 @@ a {
     width: 100%;
 }
 
-.getInTouchSection h2 {
-    height: 50px;
-    width: 70%;
-    margin: 20px 50px;
-    padding: 0;
-    
-}
+
 
 .getInTouchSection img {
     width:75px;
@@ -221,57 +247,21 @@ a {
     width: 100%;
 }
 
-/*PSEUDOCLASSES*/
-
-.runBuddy:hover .runBuddyText  {
-    position: absolute;
-    display:flex;
-    align-items:flex-end;
-    height: 350px;
-    width: 100%;
-    padding: 10px;
-    font-family: sora;
-    font-size: 26px;
-    background-color: rgba(255, 255, 255, .25);
-    border: 2px solid white;
-    border-radius: 10px;;  
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        
-    }
-
-.otherProjects:hover .projectTitle {
-    position: absolute;
-    display:flex;
-    align-items:flex-end;
-    height: 250px;
-    width: 49%;
-    padding: 10px;
-    font-family: sora;
-    font-size: 26px;
-    background-color: rgba(255, 255, 255, .25);
-    border: 2px solid white;
-    border-radius: 10px;;  
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-
-    }
-
-    nav a:hover {
-        border-top: 2px solid black;
-        font-size:larger;
-        padding-top: 10px;
-    }
-    a:visited {
-        text-decoration: none; 
-        color: black;
-    }
-
 
 /*MEDIA QUERIES*/
 
 
 @media screen and (max-width: 768px) {
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
     .aboutMe {
         width: 100%;
+    }
+
+    .aboutMeImage {
+        margin-bottom: 10px;
     }
 
     .otherProjects {
@@ -281,6 +271,10 @@ a {
 
     .otherProjects:hover .projectTitle {
         width: 100%;
+    }
+
+    .myWorkSection {
+        margin: 20px 50px;
     }
 }
 
