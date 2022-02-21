@@ -1,6 +1,6 @@
 # Brittanys-Portfolio
 
-##Welcome to my first working version of my portfolio!
+## Welcome to my first working version of my portfolio!
 
 In this first version, some of my objecties include:
 - A header with working navigation links.
@@ -12,6 +12,6 @@ In this first version, some of my objecties include:
 - Organized and concise stylesheet.
 - Github commits to track work history.
 
-Checkout the full website at https://bganser15.github.io/brittanys-portfolio/
+This site was built using [GitHub Pages](https://bganser15.github.io/brittanys-portfolio/).
 
-![Landing page of Brittany Ganser's portfolio](./assets/images/portfolioLanding.png)
+![Landing page of Brittany Ganser's portfolio](/assets/images/portfolioLanding.png)
