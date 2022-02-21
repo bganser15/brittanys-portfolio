@@ -2,7 +2,7 @@
 
 ## Welcome to my first working version of my portfolio!
 
-In this first version, some of my objecties include:
+In this first version, some of my objectives include:
 - A header with working navigation links.
 - An about me section with a photo of myself.
 - Beginner template for portfolio projects.
