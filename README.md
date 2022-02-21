@@ -6,6 +6,8 @@ In this first version, some of my objecties include:
 - A header with working navigation links.
 - An about me section with a photo of myself.
 - Beginner template for portfolio projects.
+- Contact section with links to Github, Email and LinkedIn
+- Aesthetically pleasing user interface.
 - Flexible layouts using flexbox for mobile responsiveness.
 - Organized and concise stylesheet.
 - Github commits to track work history.
